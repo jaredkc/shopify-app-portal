@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "c9299f11648727ec0f0939900c319337"
-application_url = "https://fairly-oak-stewart-comedy.trycloudflare.com"
+application_url = "https://bb-shop-portal.fly.dev"
 embedded = true
 name = "bb-shop-portal"
 handle = "bb-shop-portal"
@@ -27,9 +27,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://fairly-oak-stewart-comedy.trycloudflare.com/auth/callback",
-  "https://fairly-oak-stewart-comedy.trycloudflare.com/auth/shopify/callback",
-  "https://fairly-oak-stewart-comedy.trycloudflare.com/api/auth/callback"
+  "https://bb-shop-portal.fly.dev/auth/callback",
+  "https://bb-shop-portal.fly.dev/auth/shopify/callback",
+  "https://bb-shop-portal.fly.dev/api/auth/callback"
 ]
 
 [pos]
