@@ -124,7 +124,7 @@ export default function Index() {
               <BlockStack gap="500">
                 <BlockStack gap="200">
                   <Text as="h2" variant="headingMd">
-                    Congrats on creating a new Shopify app 🎉, and deploying it to Fly.io 🤞
+                    Congrats on creating a new Shopify app 🎉, and deploying it to Fly.io with updated token 🤞
                   </Text>
                   <Text variant="bodyMd" as="p">
                     This embedded app template uses{" "}
