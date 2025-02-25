@@ -35,13 +35,9 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
     .country(ipAddress)
     .then((response) => response);
 
-  if (geolocation && geolocation.country) {
-    message = `Geolocation based on your IP address ${ipAddress} is not available`;
-  }
-
   return json({
-    shop: session?.shop,
-    message: message,
     geolocation: geolocation.country,
+    message: message,
+    shop: session?.shop,
   });
 };
