@@ -9,7 +9,11 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 
   const { session } = await authenticate.public.appProxy(request);
   const ipFromHeader = request.headers.get("x-forwarded-for");
-  const ipCountry = request.headers.get("cf-ipcountry");
+
+  console.log("----REQUEST HEADERS----");
+  console.log(request.headers);
+  console.log("----REQUEST----");
+  console.log(request);
 
   if (!ipFromHeader) {
     return json({
@@ -38,7 +42,6 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
 
   return json({
     geolocation: geolocation.country,
-    ipCountry: ipCountry,
     message: message,
     shop: session?.shop,
   });
